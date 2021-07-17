@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page WebSite</title>
+    <script src="./js1.js "></script>
+
+    <!-----CSS Main File----->
+    <link rel="stylesheet" href="./new.css">
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!--first section starts-->
+
+    <div id="first" class="first_section">
+        <div class="slides">
+            <!-----radio buttons start----->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-----radio buttons end----->
+
+            <!-----Options Starts----->
+            <div class="options">
+                <a href="#first">Home</a>
+                <a href="#third">Projects</a>
+                <a href="#four">Pricing</a>
+                <a href="#second">Blogs</a>
+                <a href="#five">Team</a>
+                <a href="#six">Contact</a>
+            </div>
+            <!-----Options Starts----->
+
+            <!-----title of the page starts----->
+            <div class="title_1">
+                <h2>Zippy</h2>
+            </div>
+            <!-----title of the page end----->
+
+            <!-----slider images start----->
+            <div class="slide first">
+                <img src="./im1.jpg" alt="image1" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="./im2.jpg" alt="image2" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="./im3.jpg" alt="image3" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="./im4.jpeg" alt="image4" width="100%" height="600">
+            </div>
+            <!-----slider images end----->
+
+            <!-----Content starts----->
+            <div class="description">
+                <h1>"All progress takes place outside the comfort zone!</h1>
+            </div>
+            <!-----Content end----->
+
+            <!-----First Buttons starts----->
+            <div class="buttons">
+                <button class="button">Learn More</button>
+            </div>
+            <!-----First Buttons starts----->
+
+            <!-----automatic navigation start----->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-----automatic navigation end----->
+        </div>
+
+        <!-----manual navigation start----->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-----manual navigation end----->
+
+    </div>
+
+    <script type="text/javascript">
+        var count = 1
+        setInterval(function() {
+            document.getElementById('radio' + count).checked = true;
+            count++;
+            if (count > 4) {
+                count = 1;
+            }
+        }, 4000);
+    </script>
+
+    <!--#####$$$$$ first section ends $$$$$#####-->
+    <!-- Main Section -->
+    <main>
+        <!-- Home section -->
+        <section id="home">
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-md-8 col-12 mx-auto mt-3">
+                        <h1 class="text-center heading my-3">Welcome to Zippy</h1>
+                        <div class="row mt-5 mx-auto d-flex justify-content-between align-items-center first_row pt-5">
+                            <div class="col-md-8 col-12 d-flex justify-content-center">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit eaque dolores? Debitis dolorem vitae placeat id enim, dolores nihil ut quis assumenda, reiciendis unde libero neque est animi nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Quisquam sed ipsam ut nesciunt! Atque tempora voluptates numquam adipisci eos ratione necessitatibus sapiente odit, excepturi, ut nostrum deserunt aut sed nisi.</p>
+
+                            </div>
+                            <div class="col-md-2 col-12 icon_umbrella">
+                                <i class="fas fa-umbrella"></i>
+                            </div>
+                        </div>
+                        <div class="row mt-5 d-flex justify-content-between align-items-center second_row mx-auto text-center">
+                            <div class="col-md-3 col-10 d-flex justify-content-center align-items-center flex-column mx-auto mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi voluptatibus sapiente porro praesentium ratione ipsa cupiditate consectetur quas debitis</p>
+                                <button>Learn More</button>
+                            </div>
+                            <div class="col-md-3 col-10 d-flex justify-content-center align-items-center flex-column mx-auto mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi voluptatibus sapiente porro praesentium ratione ipsa cupiditate consectetur quas debitis</p>
+                                <button>Learn More</button>
+                            </div>
+                            <div class="col-md-3 col-10 d-flex justify-content-center align-items-center flex-column mx-auto mt-2">
+                                <div class="icon">
+                                    <i class="fas fa-receipt"></i>
+                                </div>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, commodi voluptatibus sapiente porro praesentium ratione ipsa cupiditate consectetur quas debitis</p>
+                                <button>Learn More</button>
+                            </div>
+                        </div>
+                        <br>
+                        <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important;">
+                    </div>
+                </div>
+        </section>
+        <!--Project Section -->
+        <section id="project">
+            <div class="container-fluid">
+                <div class="row pb-5">
+                    <div class="col-md-12 col-12">
+                        <h1 class="heading">Projects</h1>
+                        <div class="row mt-5">
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./im8.jpg" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./im9.jpg" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./im10.jpg" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 p_container mx-auto">
+                                <img src="./im7.webp" alt="Project1" class="img-fluid">
+                                <div class="p_description">
+                                    <h5>Success</h5>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium odit eveniet</p>
+                                    <button>Learn</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important; width: 1100px;">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <div class="container py-5 mb-3">
+                <div class="row">
+                    <div class="col-md-12 col-10 mx-auto">
+                        <h1 class="heading">Pricing Table</h1>
+                        <div class="row mt-5">
+                            <div class="col-md-4 col-11 mx-auto text-center pricing_container">
+                                <h5>STANDARD PLAN</h5>
+                                <p>Free</p>
+                                <ul>
+                                    <li>2GB Availabel</li>
+                                    <li>15 max contacts</li>
+                                    <li>30 msgs worth</li>
+                                    <li>Organising Ads</li>
+                                </ul>
+                                <button>BUY</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center pricing_container">
+                                <h5>BUSINESS PLAN</h5>
+                                <p>19$/MONTH</p>
+                                <ul>
+                                    <li>2GB Availabel</li>
+                                    <li>15 max contacts</li>
+                                    <li>30 msgs worth</li>
+                                    <li>Organising Ads</li>
+                                </ul>
+                                <button>BUY</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center pricing_container">
+                                <h5>PREMIUM PLAN</h5>
+                                <p>22$/MONTH</p>
+                                <ul>
+                                    <li>2GB Availabel</li>
+                                    <li>15 max contacts</li>
+                                    <li>30 msgs worth</li>
+                                    <li>Organising Ads</li>
+                                </ul>
+                                <button>BUY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important;">
+
+            </div>
+        </section>
+
+
+
+        <!-- Zippy Team Section -->
+        <section id="team">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-8 col-11 mx-auto">
+                        <h1 class="heading">Zippy Team</h1>
+                        <div class="row mt-5">
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./pr.jpg" alt="Member1" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>srashti gupta</h5>
+                                <p> Leader</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./pr.jpg" alt="Member2" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>srashti gupta</h5>
+                                <p>Manager</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./pr.jpg" alt="Member3" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>srashti gupta</h5>
+                                <p>Director</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./pr.jpg" alt="Member4" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>srashti gupta</h5>
+                                <p>Chairman</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./pr.jpg" alt="Member5" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>srashti gupta</h5>
+                                <p>HOD</p>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center card_container">
+                                <img src="./pr.jpg" alt="Member6" class="img-fluid image">
+                                <div class="social_icons">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <h5>srashti gupta</h5>
+                                <p>HR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="background: #adadad; height: 0.2rem !important; margin-top: 5rem !important;">
+
+            </div>
+        </section>
+
+
+
+        <!-- Newsletter -->
+        <section id="newsletter">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-md-12 col-12 mx-auto">
+                        <h1 class="heading1" style="color: #fff;">Newsletter Signup</h1>
+                        <div class="input_signup">
+                            <input type="text" placeholder="abc@example.com"><button>Signup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-md-8 col-11 mx-auto">
+                        <h1 class="heading">Blog</h1>
+                        <div class="row mt-5">
+                            <div class="col-md-4 col-11 mx-auto text-center mt-3">
+                                <img src="./im6.jpg" alt="Member1" class="img-fluid image">
+                                <h5> <b>Lesson</b></h5>
+                                <p>17 July, 2021</p>
+                                <p style="color: #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rerum autem soluta harum vel corporis, dolores pariatur voluptas explicabo delectus in, quos qui totam! Voluptate natus aperiam totam est excepturi!
+                                </p>
+                                <button>Read More</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center mt-3">
+                                <img src="./im10.jpg" alt="Member1" class="img-fluid image">
+                                <h5><b>Lesson</b></h5>
+                                <p>17 July, 2021</p>
+                                <p style="color: #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rerum autem soluta harum vel corporis, dolores pariatur voluptas explicabo delectus in, quos qui totam! Voluptate natus aperiam totam est excepturi!
+                                </p>
+                                <button>Read More</button>
+                            </div>
+                            <div class="col-md-4 col-11 mx-auto text-center mt-3">
+                                <img src="./im11.jpg" alt="Member1" class="img-fluid image">
+                                <h5> <b>Lesson</b></h5>
+                                <p>17 July, 2021</p>
+                                <p style="color: #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rerum autem soluta harum vel corporis, dolores pariatur voluptas explicabo delectus in, quos qui totam! Voluptate natus aperiam totam est excepturi!
+                                </p>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col-md-12 col-12 mx-auto">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mx-auto">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.3920208074933!2d80.22350891498844!3d26.475319883317972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c363184b23723%3A0x77a77b7a113116e5!2sNaraina%20College%20Of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1626508911149!5m2!1sen!2sin"
+                                            width="750" height="605" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mx-auto contact_form p-3">
+                                <h1 class="heading">Contact</h1>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="email" placeholder="joe" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="text" placeholder="abc@gmail.com" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" placeholder="XYZ" class="form-control" id="subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" cols="15" rows="6"></textarea>
+                                    </div>
+                                    <button class="submit">Submit</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="footer" style="background: #dfe6e9;">
+            <div class="container-footer py-5">
+                <div class="row">
+                    <div class="col-md-10 col-11 mx-auto">
+                        <div class="row text-center">
+                            <div class="col-md-4 col-11">
+                                <h5>Worksite</h5>
+                                <ul>
+                                    <li>zippy xyz ,254</li>
+                                    <li>254-5g internet</li>
+                                    <li>web designing</li>
+                                </ul>
+                            </div>
+                            <div class=" follow-icons col-md-4 col-11">
+                                <h5>Follow US</h5>
+                                <ul>
+                                    <li><i class="fab fa-facebook"> </i></li>
+                                    <li><i class="fab fa-instagram"></i></li>
+                                    <li><i class="fab fa-twitter"></i></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-11">
+                                <h5>Contact US</h5>
+                                <ul>
+                                    <li>+91-123456789</li>
+
+                                    <li>ippy@skype</li>
+                                    <li>abcz@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+</body>
+
+</html>
